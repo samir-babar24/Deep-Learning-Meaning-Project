@@ -1,32 +1,32 @@
- Deep Learning Mini Project
-YOLOv8, YOLOv11 & Faster R-CNN — Object Detection Models
+Deep Learning Mini Project
 
-This repository contains my work on three popular object detection models: YOLOv8, YOLOv11, and Faster R-CNN.
-Each model has been trained on a custom dataset and includes everything you need — training scripts, model weights, and inference notebooks.
+Object Detection using YOLOv8, YOLOv11, and Faster R-CNN
 
-If you're looking for a simple and clean reference for object detection, this repo will help you get started fast.
-
- Project Structure
+This repository contains three object detection pipelines implemented using YOLOv8, YOLOv11, and Faster R-CNN.
+Each model is trained on a custom dataset and includes scripts for training, validation, and inference.
+Project Structure
 Deep-Learning-Mini-Project/
-│
-├── yolov8/
+│── fasterRCNN/
 │   ├── train.py
-│   ├── best.pt
-│   ├── data.yaml
-│   └── inference.ipynb
+│   ├── infer.py
+│   ├── model.pth
 │
-├── yolov11/
+│── yolov8/
 │   ├── train.py
+│   ├── infer.py
 │   ├── best.pt
-│   ├── data.yaml
-│   └── inference.ipynb
 │
-├── fasterRCNN/
-│   ├── train_frcnn.py
-│   ├── 27.pth   (Stored using Git LFS)
-│   └── inference_frcnn.ipynb
+│── yolov11/
+│   ├── train.py
+│   ├── infer.py
+│   ├── best.pt
 │
-└── README.md
+│── data/
+│   ├── train/
+│   ├── valid/
+│   ├── test/
+│
+│── README.md
  About the Models
 YOLOv8
 
