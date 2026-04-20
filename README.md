@@ -1,4 +1,4 @@
-🌟 Deep Learning Mini Project
+ Deep Learning Mini Project
 YOLOv8, YOLOv11 & Faster R-CNN — Object Detection Models
 
 This repository contains my work on three popular object detection models: YOLOv8, YOLOv11, and Faster R-CNN.
@@ -6,7 +6,7 @@ Each model has been trained on a custom dataset and includes everything you need
 
 If you're looking for a simple and clean reference for object detection, this repo will help you get started fast.
 
-📁 Project Structure
+ Project Structure
 Deep-Learning-Mini-Project/
 │
 ├── yolov8/
@@ -27,7 +27,7 @@ Deep-Learning-Mini-Project/
 │   └── inference_frcnn.ipynb
 │
 └── README.md
-🚀 About the Models
+ About the Models
 YOLOv8
 
 A fast and reliable one-stage detector.
@@ -51,19 +51,19 @@ Install dependencies
 pip install torch torchvision torchaudio
 pip install ultralytics opencv-python matplotlib
 pip install pycocotools
-🏋️ Training the Models
+ Training the Models
 Train YOLOv8
 yolo task=detect mode=train model=yolov8s.pt data=data.yaml epochs=50 imgsz=640
 Train YOLOv11
 yolo task=detect mode=train model=yolov11s.pt data=data.yaml epochs=50 imgsz=640
 Train Faster R-CNN
 python train_frcnn.py
-🔍 Running Inference
+ Running Inference
 YOLOv8 / YOLOv11
 yolo task=detect mode=predict model=best.pt source=example.jpg
 Faster R-CNN
 python inference_frcnn.py --img example.jpg
-📊 Metrics Used
+ Metrics Used
 
 Each model was evaluated using common detection metrics:
 
@@ -75,7 +75,7 @@ COCO AP (for Faster R-CNN)
 
 These metrics help compare accuracy and overall performance.
 
-📌 Note on Large Files (Git LFS)
+ Note on Large Files (Git LFS)
 
 The Faster R-CNN weight file (27.pth) is larger than 100MB, so it’s stored using Git LFS.
 
@@ -83,7 +83,7 @@ If you're cloning this repo, make sure to run:
 
 git lfs install
 git lfs pull
-🎯 Summary
+ Summary
 
 This project covers:
 
